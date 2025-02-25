@@ -40,3 +40,8 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+
+.footer-badge {
+  height: 32px;
+  margin: 1rem;
+}

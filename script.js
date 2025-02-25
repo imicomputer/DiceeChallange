@@ -11,12 +11,16 @@ function dieFaceSwap(die, imageFolder) {
 
 function diceRoll(dice, imageFolder, labelElement) {
     let diceValue=[];
-    let diceAnimation = setInterval(() => dice.forEach(die => dieFaceSwap(die, imageFolder)), 100);
+    let diceAnimation;
     let maxValue=0;
     let result="";
 
     labelElement.innerHTML = "Rolling...";
 
+    //Start the Dice Roll
+    diceAnimation = setInterval(() => dice.forEach(die => dieFaceSwap(die, imageFolder)), 100);
+    
+    //Stop the Dice Roll
     setTimeout(
         function () {
             clearInterval(diceAnimation);
