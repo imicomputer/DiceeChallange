@@ -41,7 +41,13 @@ footer {
 
 }
 
-.footer-badge {
+.footer-badges {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-badges .badge {
   height: 32px;
   margin: 1rem;
+  object-fit: contain;
 }
